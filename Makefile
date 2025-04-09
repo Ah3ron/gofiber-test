@@ -1,4 +1,4 @@
-.PHONY: all info go-build svelte-build install-template-dependencies clean
+.PHONY: all info go-build svelte-build install-template-dependencies clean run
 
 # Default target
 all: svelte-build go-build
@@ -13,7 +13,8 @@ info:
 	$(info Available commands:)
 	$(info - go-build:  Build the Golang project.)
 	$(info - svelte-build:  Build the SvelteKit project.)
-	$(info - all:  Run all commands (SvelteBuild, GoBuild).)
+	$(info - all:  Run all commands (SvelteKit Build, Go Build).)
+	$(info - run:  Build and run the complete project.)
 	$(info )
 	$(info Usage: make <command>)
 
@@ -46,3 +47,8 @@ clean:
 	@if [ -d "./template/__svelte_build__" ]; then \
 		rm -rf ./template/__svelte_build__; \
 	fi
+
+# Run the project (build and execute the Go app)
+run: all
+	@echo "=== Running the Project ==="
+	@./app
