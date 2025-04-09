@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-//go:embed dist
+//go:embed all:dist
 var content embed.FS
 
 // All returns the content of the all directory.

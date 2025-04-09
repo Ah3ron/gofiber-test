@@ -14,7 +14,7 @@
 	  <!-- Header -->
 	  <header class="mb-8">
 		<h1 class="text-5xl font-bold text-primary">{name}</h1>
-		<p class="mt-4 text-lg text-secondary">{description}</p>
+		<p class="mt-4 text-lg text-content">{description}</p>
 	  </header>
   
 	  <!-- Navigation Links -->
@@ -34,7 +34,7 @@
   
 	  <!-- Call-to Action Section -->
 	  <section class="mt-8">
-		<p class="mb-4 text-md text-accent">Check out my latest projects and see what I’m working on!</p>
+		<p class="mb-4 text-md text-content">Check out my latest projects and see what I’m working on!</p>
 		<a href="#projects" class="btn btn-wide btn-secondary">
 		  Explore Projects
 		</a>
